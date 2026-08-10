@@ -19,7 +19,7 @@ import java.util.Objects;
 /** Authenticated synchronous client for the Jobvetta REST API. */
 public final class JobvettaClient {
     public static final URI DEFAULT_BASE_URI = URI.create("https://api.jobvetta.com/v1/");
-    public static final String VERSION = "1.0.0";
+    public static final String VERSION = "1.0.1";
 
     private static final int MAX_RESPONSE_BYTES = 8 * 1024 * 1024;
 

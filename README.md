@@ -21,7 +21,7 @@ Then add the SDK:
 <dependency>
   <groupId>com.github.jobvetta</groupId>
   <artifactId>jobvetta-java</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
 </dependency>
 ```
 

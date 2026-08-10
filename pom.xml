@@ -6,7 +6,7 @@
 
   <groupId>com.jobvetta</groupId>
   <artifactId>jobvetta</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
   <name>Jobvetta Java SDK</name>
   <description>Java 17 client for querying employer-sourced India job records through Jobvetta</description>
   <url>https://www.jobvetta.com/api</url>

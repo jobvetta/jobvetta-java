@@ -55,7 +55,7 @@ class JobvettaClientTest {
         assertEquals("q=java%20developer&location=Pune&days=7&limit=10",
                 captured.get().getRequestURI().getRawQuery());
         assertEquals("Bearer jvk_test", captured.get().getRequestHeaders().getFirst("Authorization"));
-        assertEquals("jobvetta-java/1.0.0", captured.get().getRequestHeaders().getFirst("User-Agent"));
+        assertEquals("jobvetta-java/1.0.1", captured.get().getRequestHeaders().getFirst("User-Agent"));
     }
 
     @Test
