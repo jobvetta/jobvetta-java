@@ -19,7 +19,7 @@ import java.util.Objects;
 /** Authenticated synchronous client for the Jobvetta REST API. */
 public final class JobvettaClient {
     public static final URI DEFAULT_BASE_URI = URI.create("https://api.jobvetta.com/v1/");
-    public static final String VERSION = "1.0.1";
+    public static final String VERSION = "1.2.0";
 
     private static final int MAX_RESPONSE_BYTES = 8 * 1024 * 1024;
 
@@ -46,11 +46,11 @@ public final class JobvettaClient {
         this.objectMapper = Objects.requireNonNull(objectMapper, "objectMapper");
     }
 
-    /** Searches current India jobs checked against official employer sources. */
+    /** Searches 6.5M+ live employer jobs worldwide checked against official employer sources. */
     public SearchJobsResponse searchJobs(SearchOptions options) {
         options = options == null ? new SearchOptions() : options;
         validateRange("days", options.days(), 1, 365);
-        validateRange("limit", options.limit(), 1, 10);
+        validateRange("limit", options.limit(), 1, 100);
 
         List<String> query = new ArrayList<>();
         addQuery(query, "q", options.query());
